@@ -82,5 +82,5 @@ data:
   dw 0x02 ; IPV4
   db 3721 >> 8, 3721 & 0xFF
   dd 0, 0, 0
- reply db 'Message recieved', 10
+ reply db 'Message received', 10
 progend:
