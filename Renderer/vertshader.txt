@@ -1,0 +1,3 @@
+#version 450
+#define g gl_Position
+layout (location=0) in vec3 p;uniform vec2 r;uniform vec3 l;uniform vec2 c;void main(){g=vec4(p,1.0);g.xyz-=l;float z=g.z;g.z=g.z*cos(c.y)-g.x*sin(c.y);g.x=z*sin(c.y)+g.x*cos(c.y);float y=g.y;g.y=g.y*cos(c.x)-g.z*sin(c.x);g.z=y*sin(c.x)+g.z*cos(c.x);g.x*=(r[1]/r[0]);g.w=g.z;}
