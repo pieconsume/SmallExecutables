@@ -9,4 +9,6 @@ ELF64Link is a x86-64 ELF file which uses ld-linux-x86-64.so.2 to link with libc
 
 TCPServer_ELF and TCPClient_ELF are built off of ELF64 and use syscalls to set up a basic TCP server
 
+Renderer is built off of ELF64Link and renders Scumpert the wireframe cube using libglfw and libgl
+
 Windows PE format will be added when I get around to it
