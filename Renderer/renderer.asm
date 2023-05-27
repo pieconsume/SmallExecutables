@@ -66,7 +66,7 @@ elf:
  dd 0x02, 0x06
  dq dynamic, dynamic, dynamic, dynamic.end-dynamic, dynamic.end-dynamic, 0x08
  dd 0x03, 0x04
- dq interp, interp, interp.end-interp, interp.end-interp, interp.end-interp, 0x01
+ dq interp, interp, interp, interp.end-interp, interp.end-interp, 0x01
  proghead.end:
 dynamic:
  dq 0x01, lglfw-dynstr
